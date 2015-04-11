@@ -8,7 +8,7 @@ class PrimeFactorsCalculatorTest extends FlatSpec with Matchers with BeforeAndAf
     primeFactorsCalculator = new PrimeFactorsCalculator
   }
 
-  it should "calculate prime facors" in {
+  it should "calculate prime factors" in {
     primeFactorsCalculator.calculateFor(1) should be (List(1))
     primeFactorsCalculator.calculateFor(2) should be (List(1, 2))
     primeFactorsCalculator.calculateFor(3) should be (List(1, 3))
