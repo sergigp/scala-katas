@@ -28,4 +28,11 @@ class FizzBuzzTest extends FlatSpec with Matchers with BeforeAndAfter{
     fizzbuzz.getResult(45) should be ("fizzbuzz")
     fizzbuzz.getResult(90) should be ("fizzbuzz")
   }
+
+  it should "return number if number is not multiple of 3 or 5" in {
+    fizzbuzz.getResult(16) should be ("16")
+    fizzbuzz.getResult(41) should be ("41")
+    fizzbuzz.getResult(59) should be ("59")
+    fizzbuzz.getResult(94) should be ("94")
+  }
 }
